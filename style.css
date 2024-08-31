@@ -1,17 +1,17 @@
-/* General Styles */
+
 body {
-    background-color: #f4f4f9; /* Light background color for contrast */
+    background-color: #f4f4f9; 
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Header Styles */
+
 header {
-    background-color: #ffffff; /* White background for the header */
+    background-color: #ffffff; 
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    position: relative; /* Needed for positioning the nav icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative; 
 }
 
 header h1 {
@@ -31,20 +31,20 @@ header h1 {
 
 .nav-icon span {
     font-size: 24px;
-    color: #ff7e5f; /* Accent color */
-    position: relative; /* Needed for positioning the dropdown */
+    color: #ff7e5f;
+    position: relative; 
 }
 
 .dropdown-menu {
-    display: none; /* Hide by default */
+    display: none; 
     position: absolute;
-    top: 30px; /* Adjust as needed */
+    top: 30px;
     left: 0;
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 4px;
-    z-index: 1000; /* Ensure it is above other content */
+    z-index: 1000; 
 }
 
 .dropdown-menu a {
@@ -61,16 +61,14 @@ header h1 {
     color: #ff7e5f; /* Accent color */
 }
 
-/* Show the dropdown menu when the .active class is applied */
 .nav-icon.active .dropdown-menu {
     display: block;
 }
 
-/* Navigation Styles */
 nav.main-nav {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
     padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
 }
 
@@ -103,10 +101,10 @@ nav.main-nav {
 
 .nav-top a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    color: #ff7e5f; /* Accent color */
+    color: #ff7e5f; 
 }
 
-/* Food Section Styles */
+
 .container {
     display: flex;
     align-items: flex-start;
@@ -140,20 +138,20 @@ nav.main-nav {
 
 .price {
     font-size: 1.2em;
-    color: #ff7e5f; /* Accent color */
+    color: #ff7e5f; 
     margin: 5px 0 0 0;
 }
 .section-container h2 {
-    margin-left: 20px; /* Adjust the left margin as needed */
-    font-size: 2em; /* Adjust the font size if necessary */
-    color: #333; /* Adjust the color if needed */
+    margin-left: 20px; 
+    font-size: 2em; 
+    color: #333; 
 }
 
-/* About Us Page Styles */
+
 .about-us {
     padding: 20px;
     max-width: 800px;
-    margin: 40px auto; /* Center the container with space from top and bottom */
+    margin: 40px auto; 
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -172,11 +170,11 @@ nav.main-nav {
     margin-bottom: 15px;
 }
 
-/* Contact Us Page Styles */
+
 .contact-us {
     padding: 20px;
     max-width: 800px;
-    margin: 40px auto; /* Center the container with space from top and bottom */
+    margin: 40px auto;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -211,7 +209,7 @@ nav.main-nav {
 }
 
 .contact-details a {
-    color: #ff7e5f; /* Accent color */
+    color: #ff7e5f; 
     text-decoration: none;
 }
 
@@ -246,7 +244,7 @@ nav.main-nav {
 }
 
 .contact-form button {
-    background-color: #ff7e5f; /* Accent color */
+    background-color: #ff7e5f;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -257,10 +255,10 @@ nav.main-nav {
 }
 
 .contact-form button:hover {
-    background-color: #feb47b; /* Slightly lighter accent color */
+    background-color: #feb47b; 
 }
 
-/* Rating Stars Styles */
+
 .rating {
     display: flex;
     align-items: center;
@@ -268,21 +266,21 @@ nav.main-nav {
 }
 .rating label {
     font-size: 1.5em;
-    color: #ff7e5f; /* Accent color */
+    color: #ff7e5f;
     cursor: pointer;
 }
 .rating input {
     display: none;
 }
 .rating input:checked ~ label {
-    color: #feb47b; /* Highlight color */
+    color: #feb47b; 
 }
 .rating label:hover,
 .rating label:hover ~ label {
-    color: #feb47b; /* Highlight color */
+    color: #feb47b;
 }
 
-/* Map Styles */
+
 .map-container {
     margin: 20px 0;
 }
@@ -294,14 +292,14 @@ nav.main-nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #ffffff;
     padding: 20px;
     text-align: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     color: #333;
-    margin-top: 40px; /* Space between the About Us section and the footer */
+    margin-top: 40px; 
 }
 
 .social-icons {
@@ -317,7 +315,7 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #ff7e5f; /* Accent color */
+    color: #ff7e5f;
 }
 
 footer p {
