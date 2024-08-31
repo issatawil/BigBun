@@ -50,5 +50,21 @@
         </div>
         <p>&copy; 2024 BigBun. All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navIcon = document.querySelector('.nav-icon');
+  
+            navIcon.addEventListener('click', function() {
+                navIcon.classList.toggle('active');
+            });
+  
+            // Optional: Close the dropdown if clicked outside
+            document.addEventListener('click', function(event) {
+                if (!navIcon.contains(event.target)) {
+                    navIcon.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

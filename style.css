@@ -36,7 +36,7 @@ header h1 {
 }
 
 .dropdown-menu {
-    display: none;
+    display: none; /* Hide by default */
     position: absolute;
     top: 30px; /* Adjust as needed */
     left: 0;
@@ -61,9 +61,8 @@ header h1 {
     color: #ff7e5f; /* Accent color */
 }
 
-/* Show the dropdown menu when hovering over the nav icon */
-.nav-icon:hover .dropdown-menu,
-.dropdown-menu:hover {
+/* Show the dropdown menu when the .active class is applied */
+.nav-icon.active .dropdown-menu {
     display: block;
 }
 
@@ -149,6 +148,7 @@ nav.main-nav {
     font-size: 2em; /* Adjust the font size if necessary */
     color: #333; /* Adjust the color if needed */
 }
+
 /* About Us Page Styles */
 .about-us {
     padding: 20px;

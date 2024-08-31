@@ -14,9 +14,10 @@
         <div class="nav-icon">
             <span>&#9776;</span> <!-- Unicode for hamburger menu icon -->
             <div class="dropdown-menu">
-                <a href="index.html">Menu</a>
+              <a href="index.html">Menu</a>
                 <a href="about-us.html">About Us</a>
                 <a href="contact-us.html">Contact Us</a>
+           
             </div>
         </div>
     </header>
@@ -87,5 +88,21 @@
         </div>
         <p>&copy; 2024 BigBun. All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navIcon = document.querySelector('.nav-icon');
+  
+            navIcon.addEventListener('click', function() {
+                navIcon.classList.toggle('active');
+            });
+  
+            // Optional: Close the dropdown if clicked outside
+            document.addEventListener('click', function(event) {
+                if (!navIcon.contains(event.target)) {
+                    navIcon.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
