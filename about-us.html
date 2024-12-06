@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - BigBun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="about-us-page">
+    <header>
+        <img src="img/Logo.jpeg" alt="BigBun Logo" style="width: 150px; height: auto; display: block; margin: 0 auto;">
+      
+        <div class="nav-icon">
+            <span>&#9776;</span> 
+            <div class="dropdown-menu">
+                <a href="index.html">Menu</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+               
+            </div>
+        </div>
+    </header>
+
+         
+    <nav class="main-nav">
+        <div class="nav-top">
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>At BigBun, we believe great food starts with great ingredients. That’s why we use only the freshest, locally sourced meat and chicken to craft our delicious burgers.</p>
+        <p>Our mission is simple: to deliver the "Big Bun, Big Taste" experience with every bite. Generous portions, bold flavors, and exceptional quality define who we are.</p>
+        <p>Thank you for choosing BigBun. We’re excited to serve you and make every meal a memorable one!</p>
+    </div>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://tiktok.com/@yourprofile" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2024 BigBun. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navIcon = document.querySelector('.nav-icon');
+  
+            navIcon.addEventListener('click', function() {
+                navIcon.classList.toggle('active');
+            });
+  
+         
+            document.addEventListener('click', function(event) {
+                if (!navIcon.contains(event.target)) {
+                    navIcon.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
