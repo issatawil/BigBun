@@ -90,7 +90,8 @@ nav.main-nav {
 }
 
 .nav-top a {
-    color: white;
+    color: #ff7e5f;
+    
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -128,7 +129,7 @@ nav.main-nav {
     font-weight: bold;
     font-size: 1.5em;
     margin: 0 0 10px 0;
-    color: #ffffff;
+    color: #ff7e5f;
 }
 
 .food-desc {
