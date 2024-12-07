@@ -119,9 +119,7 @@ nav.main-nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
 }
-.section-container h2{
-color: #ff7e5f;
-}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -223,7 +221,9 @@ color: #ff7e5f;
 .contact-form {
     margin-top: 20px;
 }
-
+.section-container h2{
+    color:#feb47b;
+}
 .contact-form h3 {
     font-size: 2em;
     color: #333;
