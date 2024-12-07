@@ -5,13 +5,52 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 header {
-    background-color: #000000; 
-    padding: 20px;
+    position: relative;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    position: relative; 
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.nav-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.nav-icon span {
+    font-size: 24px;
+    color: #ff7e5f;
+}
+
+.dropdown-menu {
+    display: none; /* Ensure it’s hidden by default */
+}
+
+.nav-icon.active .dropdown-menu {
+    display: block; /* Show the dropdown menu when active */
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 150px; /* Set a width for the dropdown */
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #ff7e5f;
+    color: #fff;
 }
 
 header h1 {
@@ -20,50 +59,7 @@ header h1 {
     color: #ffffff;
 }
 
-.nav-icon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
 
-.nav-icon span {
-    font-size: 24px;
-    color: #ff7e5f;
-    position: relative; 
-}
-
-.dropdown-menu {
-    display: none; 
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 4px;
-    z-index: 1000; 
-}
-
-.dropdown-menu a {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.dropdown-menu a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #ff7e5f; /* Accent color */
-}
-
-.nav-icon.active .dropdown-menu {
-    display: block;
-}
 
 nav.main-nav {
     background: linear-gradient(135deg, gray,lightgray); 
@@ -366,4 +362,13 @@ footer {
 
 footer p {
     margin: 0;
+}
+@media screen and (max-width: 600px) {
+    .nav-top ul {
+        flex-direction: row; /* Stack menu items vertically on very small screens */
+    }
+
+    .nav-top li {
+        margin: 5px 0; /* Add space between stacked items */
+    }
 }
