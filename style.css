@@ -119,7 +119,9 @@ nav.main-nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
 }
-
+.section-container h2{
+color: #ff7e5f;
+}
 .text {
     display: flex;
     flex-direction: column;
@@ -129,7 +131,7 @@ nav.main-nav {
     font-weight: bold;
     font-size: 1.5em;
     margin: 0 0 10px 0;
-    color: #ff7e5f;
+    color: white;
 }
 
 .food-desc {
