@@ -243,6 +243,13 @@ nav.main-nav {
     margin-bottom: 15px;
 }
 
+.contact-form h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Center the heading */
+}
+
 .contact-form button {
     background-color: #ff7e5f;
     color: white;
@@ -258,7 +265,23 @@ nav.main-nav {
     background-color: #feb47b; 
 }
 
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333; /* Label text color */
+}
 
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Ensure inputs span the full form width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
 .rating {
     display: flex;
     align-items: center;
