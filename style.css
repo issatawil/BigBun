@@ -90,11 +90,10 @@ nav.main-nav {
 }
 
 .nav-top a {
-    color: #ff7e5f;
-    
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 12px;
     border-radius: 4px;
     transition: background 0.3s, color 0.3s;
@@ -122,14 +121,29 @@ nav.main-nav {
 
 .text {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Ensure full width for alignment */
+}
+
+.food-title-container {
+    display: flex; /* Align title and price horizontally */
+    justify-content: space-between; /* Push price to the right */
+    align-items: center; /* Align title and price vertically */
+    width: 100%;
 }
 
 .food-title {
     font-weight: bold;
     font-size: 1.5em;
-    margin: 0 0 10px 0;
+    margin: 0;
     color: white;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #ff7e5f;
+    margin-left: 10px;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 .food-desc {
@@ -139,9 +153,11 @@ nav.main-nav {
 
 .price {
     font-size: 1.2em;
-    color: #ff7e5f; 
-    margin: 5px 0 0 0;
+    color: #ff7e5f;
+    margin-left: 10px;
+    white-space: nowrap; /* Prevent wrapping to a new line */
 }
+
 .section-container h2 {
     margin-left: 20px; 
     font-size: 2em; 
