@@ -15,12 +15,13 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1001; 
 }
 .nav-icon {
     position: absolute;
     top: 15px;
     left: 15px;
+    z-index: 3000; /* Higher than both the main-nav and dropdown menu */
 }
 
 .nav-icon span {
@@ -29,20 +30,21 @@ header {
 }
 
 .dropdown-menu {
-    display: none; /* Ensure it’s hidden by default */
+    display: none; /* Hidden by default */
+    position: absolute; /* Ensure proper placement */
+    top: 50px; /* Place below the nav icon */
+    left: 15px;
+    width: 150px; /* Set the width */
+    background: #fff; /* Set background for visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for separation */
+    border-radius: 4px; /* Rounded corners */
+    z-index: 2000; /* Ensure it appears above the main-nav */
 }
 
 .nav-icon.active .dropdown-menu {
-    display: block; /* Show the dropdown menu when active */
-    position: absolute;
-    top: 50px;
-    left: 15px;
-    width: 150px; /* Set a width for the dropdown */
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    z-index: 1000;
+    display: block; /* Make dropdown visible */
 }
+
 
 .dropdown-menu a {
     display: block;
@@ -51,6 +53,7 @@ header {
     color: #000;
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
+
 }
 
 .dropdown-menu a:hover {
@@ -64,19 +67,16 @@ header h1 {
     color: #ffffff;
 }
 
-
-
 nav.main-nav {
     background: linear-gradient(135deg, gray, lightgray);
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
     position: fixed;
-    top: 85px; /* Align with header height */
+    top: 100px; /* Align below the header */
     left: 0;
     right: 0;
-    z-index: 1002;
-
+    z-index: 1000; /* Lower than the dropdown menu */
     transition: all 0.3s ease; /* Smooth transitions */
 }
 
