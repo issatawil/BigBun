@@ -73,7 +73,7 @@ nav.main-nav {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: white;
     position: fixed;
-    top: 100px; /* Align below the header */
+    top: 90px; /* Align below the header */
     left: 0;
     right: 0;
     z-index: 1000; /* Lower than the dropdown menu */
