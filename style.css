@@ -177,6 +177,22 @@ nav.main-nav {
     scroll-margin-top: 85px; /* Adjust this to match your fixed header height */
 }
 
+.image {
+    width: 100px; /* Container width */
+    height: 67px; /* Container height */
+    background-color: #f0f0f0; /* Placeholder for background color */
+    margin-right: 15px;
+    box-sizing: border-box; /* Include padding and border in size calculations */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+.image img {
+    width: 100%; /* Make the image fit the container's width */
+    height: 100%; /* Make the image fit the container's height */
+    object-fit: cover; /* Crop and fill the container */
+    display: block; /* Remove extra spacing under the image */
+}
+
 .section-container h2 {
     margin-left: 20px; 
     font-size: 2em; 
